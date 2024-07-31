@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FFFFFF</color>
+    <color name="orange">#FF9800</color>
+    <color name="white">#000000</color>
+    <color name="gray">#FAA82F</color>
+    <color name="btn_color">#000000</color>
+    <color name="base_back">#FFCFA5</color>
+    <color name="base_back2">#FFE8C6</color>
+    <color name="green">#34AF00</color>
+    <color name="red">#FF0000</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66E40E0E</color>
+    <color name="light_gray">#FF9D0E</color>
+
+</resources>

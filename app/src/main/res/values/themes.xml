@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TwiceAdmin" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/btn_color</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+    <style name="Theme.TwiceAdmin" parent="Base.Theme.TwiceAdmin">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/btn_color</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:statusBarColor">@color/orange</item>
+
+        <item name="android:navigationMode">@color/black</item>
+    </style>
+
+    <style name="Theme.TwiceAdmin.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.TwiceAdmin.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.TwiceAdmin.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1078652055829",
+    "project_id": "dogfoodapp-896af",
+    "storage_bucket": "dogfoodapp-896af.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1078652055829:android:ceda7c6a8f8e3a22dd391c",
+        "android_client_info": {
+          "package_name": "com.tharindux.dogfoodapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeH4j6-YW3F-VntkL8weiekvEgCJVOPxo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1078652055829:android:cb89c3f896e999bcdd391c",
+        "android_client_info": {
+          "package_name": "com.tharindux.dogfoodapp.client"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeH4j6-YW3F-VntkL8weiekvEgCJVOPxo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
