@@ -40,6 +40,14 @@ public class Login extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String emailText = email.getText().toString().trim();
+                String passwordText = password.getText().toString().trim();
+
+                if (emailText.isEmpty() || passwordText.isEmpty()) {
+                    Toast.makeText(main, "Please enter both email and password.", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
                 mAuth.signInWithEmailAndPassword(email.getText().toString(), password.getText().toString())
                         .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                             @Override
