@@ -131,11 +131,6 @@ public class AddProduct extends Fragment {
                                                                     nestedData.put("PicName", ProductPicName.getText().toString()+".png");
                                                                     nestedData.put("Status", "Active");
 
-
-                                                                    Toast.makeText(getActivity(), "Loading.....", Toast.LENGTH_LONG).show();
-
-
-
                                                                     docData.put(ProductName.getText().toString(), nestedData);
                                                                     firebaseFirestore.collection("Products").document(Category.getText().toString())
                                                                             .set(docData, SetOptions.merge())

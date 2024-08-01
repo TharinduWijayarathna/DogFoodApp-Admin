@@ -24,6 +24,7 @@ import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 import com.google.firebase.firestore.SetOptions;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -49,8 +50,6 @@ public class OrderViewFragment extends Fragment {
         LayoutInflater inflater = LayoutInflater.from(getActivity());
 
         firebaseFirestore = FirebaseFirestore.getInstance();
-        Toast.makeText(getActivity(), "Loading.........", Toast.LENGTH_LONG).show();
-
         firebaseFirestore.collection("User")
                 .get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
@@ -101,14 +100,16 @@ public class OrderViewFragment extends Fragment {
                                                                     done++;
                                                                 }
                                                                 if (done == 3) {
-                                                                    arrayList.add("Name =" + name + " | Qty= " + qty + " | Price= " + price);
+                                                                    // Format the details into three lines
+                                                                    String productInfo = "Name: " + name + "\nQty: " + qty + "\nPrice: " + "Rs." + DecimalFormat.getInstance().format(Double.parseDouble(price)) + ".00";
+                                                                    arrayList.add(productInfo);
                                                                 }
                                                             }
                                                         }
                                                     }
                                                     if (productSet.getKey().equals("Total")) {
                                                         TextView textView31 = view1.findViewById(R.id.textView31);
-                                                        textView31.setText("Rs." + productSet.getValue().toString());
+                                                        textView31.setText("Rs." + DecimalFormat.getInstance().format(Double.parseDouble(productSet.getValue().toString())) + ".00");
                                                     }
                                                     if (productSet.getKey().equals("Status")) {
                                                         Button button3 = view1.findViewById(R.id.button3);
@@ -142,7 +143,7 @@ public class OrderViewFragment extends Fragment {
                                                 }
 
                                                 Spinner spinner = view1.findViewById(R.id.spinner_languages);
-                                                ArrayAdapter<String> adapter = new ArrayAdapter<>(getActivity(), android.R.layout.simple_spinner_item, arrayList);
+                                                ArrayAdapter<String> adapter = new ArrayAdapter<>(getActivity(), R.layout.spinner_item, arrayList);
                                                 adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
                                                 spinner.setAdapter(adapter);
 

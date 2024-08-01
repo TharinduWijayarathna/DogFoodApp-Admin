@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity implements NavigationBarView
             // Name, email address, and profile photo Url
             String name = user.getDisplayName();
             textView24 = findViewById(R.id.textView24);
-            textView24.setText("Hi Admin");
+            textView24.setText("Doggie Diet Admin");
 
             // Check if user's email is verified
             boolean emailVerified = user.isEmailVerified();

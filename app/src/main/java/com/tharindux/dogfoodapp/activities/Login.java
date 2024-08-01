@@ -40,7 +40,6 @@ public class Login extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(Login.this, "Loading....", Toast.LENGTH_LONG).show();
                 mAuth.signInWithEmailAndPassword(email.getText().toString(), password.getText().toString())
                         .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                             @Override
@@ -49,8 +48,9 @@ public class Login extends AppCompatActivity {
                                     FirebaseUser user = mAuth.getCurrentUser();
                                     Intent i = new Intent(main, MainActivity.class);
                                     startActivity(i);
+                                    Toast.makeText(main, "Authentication successful.", Toast.LENGTH_SHORT).show();
                                 } else {
-
+                                    Toast.makeText(main, "Authentication failed.", Toast.LENGTH_SHORT).show();
                                 }
                             }
                         }).addOnFailureListener(new OnFailureListener() {

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/base_back2"
     tools:context="com.tharindux.dogfoodapp.activities.MainActivity">
 
     <androidx.appcompat.widget.Toolbar
@@ -54,8 +55,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/bottom_manu"
         app:itemBackground="@color/base_back"
-        app:itemIconTint="@color/btn_color"
-        app:itemTextColor="@color/btn_color"
+        app:itemIconTint="@color/light_gray"
+        app:itemTextColor="@color/light_gray"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

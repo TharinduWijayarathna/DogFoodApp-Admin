@@ -57,7 +57,6 @@ public class ProductViewFragment extends Fragment {
         StorageReference storageRef = storage.getReference();
 
         firebaseFirestore = FirebaseFirestore.getInstance();
-        Toast.makeText(getActivity(), "Loading.........", Toast.LENGTH_LONG).show();
         firebaseFirestore.collection("Products")
                 .get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
