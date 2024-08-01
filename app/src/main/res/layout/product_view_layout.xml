@@ -55,7 +55,7 @@
         android:layout_marginTop="15dp"
         android:text="Price"
         android:textColor="@color/white"
-        android:textSize="20dp"
+        android:textSize="18dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/textView8"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
@@ -65,8 +65,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:text="Qty"
-        android:textSize="20dp"
+        android:text="Quantity"
+        android:textSize="18dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/textView9"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />

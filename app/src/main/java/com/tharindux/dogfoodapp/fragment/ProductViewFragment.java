@@ -81,13 +81,13 @@ public class ProductViewFragment extends Fragment {
                                     for (Map.Entry<String, Object> unite : productlist.entrySet()) {
                                         if (unite.getKey().equals("Price")) {
                                             TextView textView9 = view1.findViewById(R.id.textView9);
-                                            textView9.setText("Rs."+unite.getValue().toString());
+                                            textView9.setText("Rs."+unite.getValue().toString() + ".00");
                                         }
                                     }
                                     for (Map.Entry<String, Object> unite : productlist.entrySet()) {
                                         if (unite.getKey().equals("Qty")) {
                                             TextView textView6 = view1.findViewById(R.id.textView6);
-                                            textView6.setText("Qty-:"+unite.getValue().toString());
+                                            textView6.setText("Quantity: "+unite.getValue().toString());
                                         }
                                     }
 
