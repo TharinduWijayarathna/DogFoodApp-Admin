@@ -9,7 +9,6 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 import androidx.annotation.NonNull;
@@ -149,7 +148,7 @@ public class ProductViewFragment extends Fragment {
                                                     firebaseFirestore.collection("Products").document(document.getId())
                                                             .set(Pds, SetOptions.merge());
 
-                                                    DeleteStroreg("Products/"+unite.getValue().toString());
+                                                    DeleteStorage("Products/"+unite.getValue().toString());
                                                     ProductViewFrame.removeView(view1);
                                                 }
                                             });
@@ -165,7 +164,7 @@ public class ProductViewFragment extends Fragment {
 
 
     }
-    public void DeleteStroreg(String path){
+    public void DeleteStorage(String path){
 
         StorageReference storageRef = storage.getReference();
         StorageReference desertRef = storageRef.child(path);
