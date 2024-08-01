@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Twice Admin"
+rootProject.name = "Doggie Diet Admin"
 include ':app'
